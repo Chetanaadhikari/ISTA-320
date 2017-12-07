@@ -31,8 +31,11 @@
                 </Grid.RowDefinitions>
                 <Button x:Name="plotButton" Grid.Row="1" HorizontalAlignment="Left" Content="Plot Graph" FontSize="18" Click="plotButton_Click"/>
                 <TextBlock x:Name="duration" Grid.Row="3" HorizontalAlignment="Left" Text="Duration (ms):" FontSize="18" TextWrapping="Wrap"/>
+                <Button x:Name="cancelButton" Grid.Row="5" HorizontalAlignment="Left" Content="Cancel" FontSize="18" Width="110" Click="cancelButton_Click"/>
             </Grid>
             <Image x:Name="graphImage" Grid.Column="1" Stretch="Fill" />
         </Grid>
+        <TextBlock x:Name="messages" Grid.Row="4" FontSize="18" HorizontalAlignment="Left"/>
     </Grid>
 </Page>
+
